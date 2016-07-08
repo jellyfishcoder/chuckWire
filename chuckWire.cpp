@@ -11,3 +11,16 @@
 #include <Wire.h>
 
 
+void chuck::chuck(unsigned int address, int powerPin, int groundPin) {
+	// Setup ground and power pins
+	pinMode(powerPin, OUTPUT);
+	digitalWrite(powerPin, HIGH);
+	pinMode(groundPin, OUTPUT);
+	digitalWrite(groundPin, LOW);
+
+	// Address
+
+
+	delay(50);
+
+	Wire.begin();
